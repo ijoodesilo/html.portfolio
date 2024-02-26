@@ -1,54 +1,24 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-		<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width-device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css"/>
-		<title>My Personal Calculator.</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Flames</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src='index.js'></script>
 </head>
-<script src="index.js"></script>
 <body>
-		<div class="container">
-				<div class="calculator">
-						<form>
-								<div class="display">
-										<input type="text" name="display">
-								</div>
-								<div>
-										<input  class="operator" type="button" value="AC"onclick="display.value =  '  '  ">
-											<input class="operator" type="button" value="DC" onclick= "display.value = display.value.toString().slice ( 0, -1)">
-											<input class="operator" type="button" value="."onclick="display.value += '.' ">
-											<input class="operator" type="button" value="/"onclick="display.value += '/' ">
-								</div>
-								<div >
-											<input type="button" value="7" onclick="display.value += '7' ">
-											<input type="button" value="8" onclick="display.value += '8'  ">
-											<input type="button" value="9" onclick="display.value += '9'  ">
-											<input class="operator" type="button" value="*"onclick="display.value += '*' ">
-								</div>
-								<div>
-											<input type="button" value="4"onclick="display.value += '4' ">
-											<input type="button" value="5"onclick="display.value += '5' ">
-											<input type="button" value="6"onclick="display.value += '6' ">
-											<input class="operator" type="button" value="-"onclick="display.value += '-' ">
-								</div>
-								<div>
-											<input type="button" value="1"onclick="display.value += '1' ">
-											<input type="button" value="2"onclick="display.value += '2' ">
-											<input type="button" value="3"onclick="display.value += '3' ">
-											<input class="operator" type="button" value="+"onclick="display.value += '+' ">
-								</div>
-								<div>
-											<input type="button" value="00"onclick="display.value += '00' ">
-											<input type="button" value="0"onclick="display.value += '0' ">
-											<input  class="equal" type="button" value="=" onclick="display.value = eval(display.value)">
-								</div>
-								<div>
-										<footer class="author">Coded👨‍💻  With ❤️ in Nigeria</footer>
-								</div>
-						</form>
-				</div>
-		</div>
+   <h1>F L A M E S ❤ 💖</h1>
+   <h2 id="hi">Enter Your Names to test your relatedness!</h2>
+   <h3 id="dope">Insert Your Names</h3>
+   <div>
+   <input id="your-name"  type="search" name="your-name" placeholder="First Name">
+   <span>💖</span>
+   <input id ="the-name" type="search" name="the-name" placeholder="First Name">
+    </div>
+    <button id="calculate">Check Status</button>
+    <h1 id="wait">...................</h1>
 </body>
+<footer>Made with <span id="nigeria">❤</span> Nigeria </footer>
 </html>
