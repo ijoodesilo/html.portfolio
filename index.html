@@ -1,36 +1,54 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josiah Portfolio</title>
-</head>
-<body>
-    <h1>Josiah's Portfolio</h1>
-    <h2>I'm a Web Developer</h2>
-    <hr>
-    <h3><a href="./public/movie ranking.html">Movie Ranking Project</a></h3>
-    <img src="./assets/images/josiah            movie -ranking.png" height="500" alt="movie ranking project review"/>
-    <h2>The Best Movies According to Josiah</h2>
-    <h3>My top-3 movies of all-time</h3>
 
-    <h3><a href="./public/birthday invite.html">Birthday Invite Project</a></h3>
-    <img src="./assets/images/josiah      birthday- invite.png" height="500" alt="a birthday cake"/>
-    <hr>
-    <h3><a href="./public/about.html">About me</a><a href="./public/contact.html">Contact me</a></h3>
+<html>
+<head>
+		<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css"/>
+		<title>My Personal Calculator.</title>
+</head>
+<script src="index.js"></script>
+<body>
+		<div class="container">
+				<div class="calculator">
+						<form>
+								<div class="display">
+										<input type="text" name="display">
+								</div>
+								<div>
+										<input  class="operator" type="button" value="AC"onclick="display.value =  '  '  ">
+											<input class="operator" type="button" value="DC" onclick= "display.value = display.value.toString().slice ( 0, -1)">
+											<input class="operator" type="button" value="."onclick="display.value += '.' ">
+											<input class="operator" type="button" value="/"onclick="display.value += '/' ">
+								</div>
+								<div >
+											<input type="button" value="7" onclick="display.value += '7' ">
+											<input type="button" value="8" onclick="display.value += '8'  ">
+											<input type="button" value="9" onclick="display.value += '9'  ">
+											<input class="operator" type="button" value="*"onclick="display.value += '*' ">
+								</div>
+								<div>
+											<input type="button" value="4"onclick="display.value += '4' ">
+											<input type="button" value="5"onclick="display.value += '5' ">
+											<input type="button" value="6"onclick="display.value += '6' ">
+											<input class="operator" type="button" value="-"onclick="display.value += '-' ">
+								</div>
+								<div>
+											<input type="button" value="1"onclick="display.value += '1' ">
+											<input type="button" value="2"onclick="display.value += '2' ">
+											<input type="button" value="3"onclick="display.value += '3' ">
+											<input class="operator" type="button" value="+"onclick="display.value += '+' ">
+								</div>
+								<div>
+											<input type="button" value="00"onclick="display.value += '00' ">
+											<input type="button" value="0"onclick="display.value += '0' ">
+											<input  class="equal" type="button" value="=" onclick="display.value = eval(display.value)">
+								</div>
+								<div>
+										<footer class="author">Coded👨‍💻  With ❤️ in Nigeria</footer>
+								</div>
+						</form>
+				</div>
+		</div>
 </body>
 </html>
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
